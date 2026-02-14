@@ -1,5 +1,8 @@
 # 🏓 Uptime Ping
 
+[![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Simple API health monitoring with Telegram alerts.
 
 轻量级服务健康监控，支持 Telegram 告警。
