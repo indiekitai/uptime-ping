@@ -1,5 +1,5 @@
 [project]
-name = "uptime-ping"
+name = "indiekit-uptime-ping"
 version = "0.1.0"
 description = "Simple API health monitoring with Telegram alerts"
 requires-python = ">=3.11"
