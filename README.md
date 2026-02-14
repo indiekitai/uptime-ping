@@ -55,6 +55,29 @@ uvicorn src.main:app --port 8081
 | `/config/endpoints` | DELETE | Remove endpoint |
 | `/check` | POST | Trigger immediate check |
 
+## API 使用示例
+
+```bash
+# 查看所有服务状态
+curl https://up.indiekit.ai/status
+
+# 添加监控端点
+curl -X POST https://up.indiekit.ai/config/endpoints \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://your-api.com/health", "name": "My API"}'
+
+# 删除监控端点
+curl -X DELETE https://up.indiekit.ai/config/endpoints \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://your-api.com/health"}'
+
+# 手动触发检查
+curl -X POST https://up.indiekit.ai/check
+
+# 获取检查历史
+curl https://up.indiekit.ai/checks?limit=10
+```
+
 ## Telegram Setup
 
 1. Create a bot via @BotFather

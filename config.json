@@ -1,0 +1,11 @@
+{
+  "endpoints": [
+    {"url": "https://indiekit.ai/health", "name": "IndieKit 主站"},
+    {"url": "https://hn.indiekit.ai/health", "name": "HN Digest"},
+    {"url": "https://up.indiekit.ai/health", "name": "Uptime Ping"},
+    {"url": "https://hook.indiekit.ai/health", "name": "Webhook Relay"},
+    {"url": "https://s.indiekit.ai/", "name": "Tiny Link"},
+    {"url": "https://p.indiekit.ai/", "name": "Quick Paste"}
+  ],
+  "check_interval_seconds": 300
+}
